@@ -1,10 +1,14 @@
-<html>
+<head>
+    <title>BMI Calculator</title>
+ </head>
 <body>
-<h2>BMI Calculator</h2>
-<form action="/calbmi" method="POST">
-    <input type="text" name="weight" placeholder="Weight in kg" required><br>
-    <input type="text" name="height" placeholder="Height in metre" required><br>
-    <input type="submit" value="Calculate">
-</form>
+<img src="https://www.cdc.gov/healthyweight/images/assessing/bmi-adult-fb-600x315.jpg?_=07167">
+<!--TODO: show bmi below -->
+
+<h2>Result is <%= request.getAttribute("bmi") %></h2>
+<!--TODO: show built type below -->
+<h3>According to your BMI, you are considered <%= request.getAttribute("builtType") %></h3>
 </body>
-</html>
+</html> 
+
+
